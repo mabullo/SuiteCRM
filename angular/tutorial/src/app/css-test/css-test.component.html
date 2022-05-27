@@ -1,0 +1,20 @@
+<div id="test-css">
+    <p [style.color]="color">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum officia laudantium aliquid tempore?
+       Tempora eveniet obcaecati error officiis vitae eum minus, non nisi ab labore saepe ullam doloremque ad itaque?
+    </p>
+    <p [ngClass]="{'big': size =='big','small' : size =='small'}">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatem. Dolorem illum magni soluta accusamus expedita hic nisi praesentium aspernatur, veniam doloremque. Illo quod neque dignissimos harum? Quae, iure aspernatur.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam ullam, sequi qui natus et esse culpa, similique veritatis molestiae quasi error aut incidunt alias earum dolor in deserunt nostrum dicta.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nobis, officia in incidunt iste sunt accusamus harum vel autem labore aut commodi eligendi et consequatur illum exercitationem magni error vero!
+    </p>
+    <select (change)="changeColor(colorSelect)" #colorSelect>
+        <option value="0">Black</option>
+        <option value="1">Rosso</option>
+        <option value="2">Verde</option>
+        <option value="3">Blu</option>
+    </select>
+    <select (change)="changeSize(sizeSelect)" #sizeSelect>
+        <option value="1">Grande</option>
+        <option value="2">Piccolo</option>
+    </select>
+</div>

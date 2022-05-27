@@ -1,0 +1,7 @@
+<h2>Form Reattivo</h2>
+<form action="" (ngSubmit)="send()" [formGroup]="form">
+    <input class="form-control" type="text" placeholder="username" formControlName="user">
+    <input class="form-control" type="email" placeholder="email" formControlName="email">
+    <input class="form-control" type="date" placeholder="data di nascita" formControlName="date">
+    <input type="submit" value="invia">
+</form>

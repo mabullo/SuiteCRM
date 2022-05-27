@@ -1,0 +1,24 @@
+<div id="about">
+    <h2>Ciao {{user}}</h2>
+    <p>
+        Oggi è il {{today | date: 'EEEE, d MMMM, y, h:mm:ss a zzzz'}}
+    </p>
+    <p>
+        {{money | currency}}
+    </p>
+    <p *ngIf="show">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quo magnam a amet officiis quisquam corporis nisi commodi et doloremque, doloribus molestias laudantium dolorum facere consequuntur modi ea? Quod, odio.
+    </p>
+    <app-box></app-box>
+    <button id="btn" (click)="showHidden()">Mostra/Nascondi</button>
+    <div id="tool" #tool>
+        <select (change)="hello(selectField)" #selectField>
+            <option value="1">Saluta con l'alert</option>
+            <option value="2">Saluta in console</option>
+        </select>
+    </div>
+    <button (click)="printElement()">Print</button>
+    <ul>
+        <li *ngFor="let i of lista">{{i}}</li>
+    </ul>
+</div>
